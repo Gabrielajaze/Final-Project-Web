@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="header-logo">
+                SUNIB health
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./event.html">Event</a></li>
+                    <li><a href="./article.html">Article</a></li>
+                    <li><a class="register" href="./register.html">Register</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="register-box">
+            
+                <div class="form-top">
+                    
+                    <h2>Welcome To Sunib Health</h2>
+                    <h5>Please fill in this form to register</h5>
+                </div>
+                <form action="./registerSuccess.html"  id="form" class="form" method="GET">
+
+                    <div class="form-control">
+                    
+                        <input type="text" placeholder="Full Name" 
+                        id="username">
+                        <small>At least 2 character</small>
+                    </div>
+                    
+                    <div class="form-control">
+                      
+                        <select name="gender" id="gender">
+                            <option value="-1" disabled selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                       
+                        <input type="text" placeholder="NIM (2401234567)"
+                        id="nim">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                       
+                        <input type="tel" placeholder=" Phone Number (0812-1212-1221)" 
+                        id="phone">
+                        <small>Error message</small>
+                    </div>
+                
+                    <div class="form-control">
+                     
+                        <input type="email" placeholder="Email" 
+                        id="email">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                       
+                        <input type="password"  placeholder="Password" 
+                        id="password">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" placeholder="Confirm Password" 
+                        id="confirm">
+                        <small>Error message</small>
+                    </div>
+            
+                    <div class="form-control-agreement">
+                        <a href="#">Terms and Conditions</a> <br>
+                        <label for="agreement">
+                            <input type="checkbox" name="agreement" class="agreement" id="agreement" value="yes">
+                        <b> I agree to the terms and conditions</b>
+                        </label>
+                    </div>
+                    
+                    
+                    <input type="submit" value="Register" class="submit">
+                
+                </form>
+            </div>
+           
+        </div>
+
+        <footer>
+            <div class="contact">
+                <p>Contact us at</p>
+              </div>
+            <div class="social-media">
+              <a href="#"><img src="./images/Instagram.png"></a>
+              <a href="#"><img src="./images/facebook.png"></a>
+              <a href="#"><img src="./images/twitter.png"></a>
+            </div>
+          </footer>
+        
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>

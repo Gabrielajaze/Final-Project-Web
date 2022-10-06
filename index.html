@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="header-logo">
+                SUNIB health
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./event.html">Event</a></li>
+                    <li><a href="./article.html">Article</a></li>
+                    <li><a class="register" href="./register.html">Register</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="content-slides">
+                <div class="slider">
+                    <img src="./images/slide1.jpg" alt=""  height="600px">
+                </div>
+                <div class="slider">
+                        <img src="./images/slide2.png" alt="" height="600px">
+                    </div>
+                    <div class="slider">
+                        <img src="./images/slide3.png" alt="" height="600px">
+                    </div>
+                    <div class="navigation-button">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+                    </div>
+            </div>
+            <div class="content-1">
+                <div class="flex">
+                    <div class="box1">
+                        <div class="box1-1">
+                            <h1>WHAT IS SUNIB HEALTH?</h1>
+                        </div>
+                        <div class="box1-2">
+                            <pre>       SUNIB HEALTH is one of the organizations at BINUS University that contributes to <br> the health sector. SUNIB HEALTH was established in 2022, the same year the SUNIB Fo- <br> od Court opened. SUNIB HEALTH's main goal is to ensure that everyone is guaranteed <br> health on a universal scale. In addition, SUNIB HEALTH also organizes innovative health <br> events and helps in developing social care for one another as well as providing articles <br> related to physical health.</pre>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="./images/logoHealth.jpg.png" alt="">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="content-3">
+                <div class="box3">
+                    <h1>EVENT</h1>
+                </div>
+                <div class="box4">
+                    Sunib Health Event is a certain activity or festival that shows, displays and celebrates to commemorate important things that are held at a certain time.
+                </div>
+                <div class="box5">
+                    <div class="flex">
+                        <div class="box5-1">
+                            <a href="./article.html"><img class="gmbr1" src="./images/event1.jpg" alt="" width="400px" height="300px"></a>
+                        </div>
+                        <div class="box5-1">
+                            <a href="./index.html"><img class="gmbr1" src="./images/event2.jpg" alt="" width="400px" height="300px"></a>
+                        </div>
+                        <div class="box5-1">
+                            <a href="./register.html"><img class="gmbr1" src="./images/event3.jpg" alt="" width="400px" height="300px"></a>
+                        </div>    
+                    </div>
+                    <div class="box5-2">
+                    <p><a class="button" href="./event.html"> CLICK HERE FOR MORE</a></p>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="content-4">
+                <div class="flex">
+                    <div class="box6">
+                        <div class="tittle">
+                            WANT TO GET INTERESTING INFORMATION ABOUT SUNIB HEALTH? 
+                        </div>
+                        <div class="text">
+                            BEFORE ACCESSING OTHER PAGE MENUS, YOU CAN REGISTER FIRST BY CLICKING THE BUTTON BELOW OR YOU CAN GO DIRECTLY TO THE REGISTER MENU
+                        </div>
+                        <div class="box-button">
+                            <a class="button2" href="./register.html">sign up here</a>
+                        </div>
+                    </div>
+                    <div class="box7">
+                        <img src="./images/registrasi2.png" alt="" width="700px" height="500px">
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+
+        
+        <footer>
+            <div class="contact">
+                <p>Contact us at</p>
+              </div>
+            <div class="social-media">
+              <a href="#"><img src="./images/Instagram.png"></a>
+              <a href="#"><img src="./images/facebook.png"></a>
+              <a href="#"><img src="./images/twitter.png"></a>
+            </div>
+          </footer>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides (n) {
+            showSlides(slideIndex +=n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slider = document.getElementsByClassName("slider");
+            if(n > slider.length)
+            {
+                slideIndex = 1;
+            }
+
+            if( n < 1)
+            {
+                slideIndex = slider.length
+            }
+            for(i = 0; i< slider.length; i++)
+            {
+                slider[i].style.display = "none";
+            }
+            slider[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

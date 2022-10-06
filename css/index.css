@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: rgb(255, 255, 255);
+}
+
+.content-slides{
+    width: 100%;
+    position: relative;
+   
+}
+
+.content-slides .slider img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 2.0s;
+    
+
+}
+
+.content-slides .navigation-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 100%;
+    
+}
+
+.prev{
+    margin-left:0px;
+}
+
+.next{
+    margin: auto;
+    margin-right: 0px;
+}
+
+.content-slides .navigation-button .prev, .content-slides .navigation-button .next{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+}
+
+.content-slides .navigation-button .prev:hover, .content-slides .navigation-button .next:hover{
+    background: black;
+    color: orange;
+}
+
+@keyframes fade{
+    from{opacity: 0.5}
+    to {opacity:  2}
+}
+
+.flex{
+    display: flex;
+  
+    justify-content:space-around;
+}
+
+.box1{
+    width: 70%;
+    height:375px ;
+    
+}
+
+.box1-1{
+    margin-top: 70px;
+    height: 100px;
+}
+
+h1{
+    font-size: 40px;
+    color: coral;
+    text-align: center;
+}
+
+pre{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align:left;
+}
+
+.box1-2{
+    height: 275px;
+}
+
+.box2{
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 30%;
+    height:375px ;
+}
+
+.box3{
+    height: 50px;
+  
+}
+
+.box4{
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+}
+
+.box5{
+    height: 300px;
+}
+
+.box5-1{
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.box5-2{
+    margin-top: 40px;
+    width: 270px;
+    height: 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    background: #ffcb1e;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.button:hover{
+    color: black;
+}
+.content-3{
+    width: 100%;
+    height: 500px;
+    
+   
+}
+
+.content-4{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.box6{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+    
+}
+
+.tittle{
+    color: coral;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-button{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    background: #ffcb1e;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+.button2:hover{
+    color: black;
+}
+
+.box7{
+    width: 50%;
+    margin-right: 20px;
+    
+}
